@@ -1,0 +1,107 @@
+body {
+  font-family: monospace;
+  max-width: 920px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 920px) {
+  body {
+    max-width: 100%;
+  }
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+img.logo {
+  width: 200px;
+}
+
+.talks {
+  padding: 0px;
+}
+
+.talk {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  /*background-image: -webkit-linear-gradient(left, #5314b9 0%, #af45cf 50%);*/
+}
+
+.talk:hover {
+  color: white;
+
+  -webkit-animation: AnimationTalk 30s ease infinite;
+  -moz-animation: AnimationTalk 30s ease infinite;
+  animation: AnimationTalk 30s ease infinite;
+  background: linear-gradient(270deg, #5314b9, #af45cf);
+  background-size: 400% 400%;
+}
+
+.talk .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.talk .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.talk .links a {
+  font-size: 16px;
+  color: #5314b9;
+  font-weight: bolder;
+}
+
+.talk:hover .links a {
+  color: white;
+  font-weight: bold;
+}
+
+@-webkit-keyframes AnimationTalk {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationTalk {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationTalk {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
